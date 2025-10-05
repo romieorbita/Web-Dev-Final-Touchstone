@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Points App Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <div>
+    <label for="pageMenu"><strong>H1 Page Title</strong></label>
+    <select id="pageMenu" onchange="location = this.value;">
+      <option value="">--Select--</option>
+      <option value="about_us.html">About Us</option>
+      <option value="gallery.html">Gallery</option>
+      <option value="fitness.html">Fitness Points</option>
+      <option value="index.html">Home Page</option>
+    </select>
+  </div>
+  <nav>
+    <a href="#">Membership</a>
+    <a href="#">Gyms Near Me</a>
+    <a href="#">Classes</a>
+    <a href="#">Training</a>
+  </nav>
+</header>
+
+
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Create an account<br>Check in<br>Gain Points!</h2>
+      <p class="app-description">App Description, Earn points</p>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h3>To get started:</h3>
+    <div class="step-columns">
+      <div class="step">
+        <h4>Create your account</h4>
+        <p>Earn Description</p>
+      </div>
+      <div class="step">
+        <h4>Earn points</h4>
+        <p>Earn Description</p>
+      </div>
+      <div class="step">
+        <h4>Claim Rewards</h4>
+        <p>Claim Description</p>
+      </div>
+    </div>
+    <p><a href="#">Get started hyperlink to create account</a></p>
+  </section>
+
+  <!-- Rewards Section -->
+  <section class="rewards">
+    <h3>The more you put in, the more you get</h3>
+    <div class="reward-cards">
+      <div class="reward-card">
+        <h4>Reward Name</h4>
+        <p>Description</p>
+      </div>
+      <div class="reward-card">
+        <h4>Reward Name</h4>
+        <p>Description</p>
+      </div>
+      <div class="reward-card">
+        <h4>Reward Name</h4>
+        <p>Description</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
+      <Form>
+            <label for="myInput">Get Updated on what's new! </label>
+            <input type="text" class = "subscribe" name="myInput">
+            <button type="button" onclick="subscribeClicked()">Subscribe</button>
+          </Form>
+    </div>
+    <div class="footer-center">
+      <a href="#">Link</a> | <a href="#">Link</a> | <a href="#">Link</a> | <a href="#">Link</a>
+    </div>
+    <div class="footer-right">
+      <p>Social Media Icons with Link</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

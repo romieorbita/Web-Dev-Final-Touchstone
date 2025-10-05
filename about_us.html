@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gym Website</title>
+  <link href="styles.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <label for="pageMenu"><strong>H1 Page Title</strong></label>
+      <select id="pageMenu" onchange="location = this.value;">
+        <option value="">--Select--</option>
+        <option value="about_us.html">About Us</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="fitness.html">Fitness Points</option>
+        <option value="index.html">Home Page</option>
+      </select>
+    </div>
+    <nav>
+      <a href="#">Membership</a>
+      <a href="#">Gyms Near Me</a>
+      <a href="#">Classes</a>
+      <a href="#">Training</a>
+    </nav>
+  </header>
+
+
+  <div class="promo">
+    Try us for 7 days FREE <span>FREE PASS</span>
+  </div>
+
+  <section>
+    <h2>About Us</h2>
+    <p>Description about business</p>
+  </section>
+
+
+  <section>
+    <h2>Testimonials from Gym Goers</h2>
+    <p>Testimonials</p>
+  </section>
+
+
+  <section class="contact">
+    <h3>Learn more about us!</h3>
+    
+    <form  id="contact-information">
+      
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="1"></textarea>
+
+      <label for="customOrder">Custom Order</label>
+      <input id="customOrder" type="checkbox"/>
+
+      
+
+      <input id="submit-button" type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="newsletter">
+        <Form>
+            <label for="myInput">Get Updated on what's new! </label>
+            <input type="email" class = "subscribe" name="myInput">
+            <button type="button" onclick="subscribeClicked()">Subscribe</button>
+          </Form>
+      </div>
+      <div class="social-media">Social Media Icons with Link</div>
+    </div>
+    <div class="footer-bottom">
+      <div></div>
+      <div class="links">
+        <a href="#">Link</a>|
+        <a href="#">Link</a>|
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>

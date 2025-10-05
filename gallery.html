@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <div>
+      <label for="pageMenu"><strong>H1 Page Title</strong></label>
+      <select id="pageMenu" onchange="location = this.value;">
+        <option value="">--Select--</option>
+        <option value="about_us.html">About Us</option>
+        <option value="gallery.html">Gallery</option>
+        <option value="fitness.html">Fitness Points</option>
+        <option value="index.html">Home Page</option>
+      </select>
+    </div>
+    <nav>
+      <a href="#">Membership</a>
+      <a href="#">Gyms Near Me</a>
+      <a href="#">Classes</a>
+      <a href="#">Training</a>
+    </nav>
+  </header>
+<body>
+    <h2 class="offer">A sneak peak of what we have to offer!</h2>
+    <div class="cart-container">
+      <button id="cart-button"class="view-cart"onclick="viewCart()">View Cart</button>
+      <button class="clear-cart"onclick="clearCart()">Clear Cart</button>
+      <button class="process-order" onclick="processOrder()">Process Order</button>
+    </div>
+    <div id="cart-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+  </div>
+  </div>
+   
+    <div class="table">
+      <table border="1" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td>
+          <img src="images/Client2_GroupKickboxing.png" alt="Description 1" ><br>
+          <strong style="font-family:Impact">Group Kickboxing</strong>
+        </td>
+        <td>
+          <img src="images/Client2_GroupPilates.png" alt="Description 2"><br>
+          <strong style="font-family:Impact">Group Pilates</strong>
+        </td>
+        <td>
+          <img src="images/Client2_GroupYoga.png" alt="Description 3"><br>
+          <strong style="font-family:Impact">Group Yoga</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Client2_IndividualKickboxing.png" alt="Description 4"><br>
+          <strong style="font-family:Impact">Individual Kickboxing</strong>
+        </td>
+        <td>
+          <img src="images/Client2_IndividualPilates.png" alt="Description 5"><br>
+          <strong style="font-family:Impact">Individual Pilates</strong>
+        </td>
+        <td>
+          <img src="images/Client2_GroupKickboxing.png" alt="Description 6"><br>
+          <strong style="font-family:Impact">Group Kickboxing</strong>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Client2_WaterBottle.png" alt="Description 7"><br>
+          <strong style="font-family:Impact"><button class="add-to-cart" data-item="Water Bottle" onclick="itemClicked(this)"> Exclusive Water Bottle</button></strong>
+        </td>
+        <td>
+          <img src="images/Client2_YogaMat.png" alt="Description 8"><br>
+          <button class="add-to-cart" data-item="Yoga Mat" onclick="itemClicked(this)"><strong style="font-family:Impact">Exclusive Yoga Mat</strong></button>
+        </td>
+        <td>
+          <img src="images/Client2_TeeShirt.png" alt="Description 9"><br>
+          <button class="add-to-cart" data-item="T-Shirt"onclick="itemClicked(this)"><strong style="font-family:Impact">Exclusive T-Shirt</strong></button>
+        </td>
+      </tr>
+    </table>
+    <footer id="footer-gallery">
+      <div class="footer-top">
+        <div class="newsletter">
+          <Form>
+            <label for="myInput">Get Updated on what's new! </label>
+            <input type="text" class = "subscribe" name="myInput">
+            <button type="button" onclick="subscribeClicked()">Subscribe</button>
+          </Form>
+        </div>
+        <div class="social-media">Social Media Icons with Link</div>
+      </div>
+      <div class="footer-bottom">
+        <div></div>
+        <div class="links">
+          <a href="#">Link</a>|
+          <a href="#">Link</a>|
+          <a href="#">Link</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
